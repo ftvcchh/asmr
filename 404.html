@@ -1,1 +1,11 @@
-<script language="javascript"> document.location.href=("https://www.asmrnn.com");</script>
+<script language="javascript">
+var path = window.location.pathname;
+var queryString = window.location.search;
+var targetUrl = 'https://www.asmrnn.com';
+if (queryString) {
+  targetUrl += path + queryString;
+} else {
+  targetUrl += path;
+}
+window.location.href = targetUrl;
+</script>
