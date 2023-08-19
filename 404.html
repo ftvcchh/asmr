@@ -1,5 +1,5 @@
 <script language="javascript">
-  var parameter = "your_parameter_value";
-  var url = "https://www.asmrnn.com?parameter=" + encodeURIComponent(parameter);
-  document.location.href = url;
+  var currentUrl = window.location.href;
+  var newUrl = currentUrl.replace(/(https?:\/\/)?(www\.)?(0|b|w|asmr|asmrr)\.(com|dog|cn)\/(\d+)\.html/, "https://www.asmrnn.com/$5.html");
+  document.location.href = newUrl;
 </script>
